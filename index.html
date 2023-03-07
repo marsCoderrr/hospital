@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            font-family: 'Roboto', sans-serif;
+            list-style-type: none;
+            text-decoration: none;
+        }
+
+
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .flex {
+            display: flex;
+            gap: 20px;
+        }
+
+        header {
+            background-color: #f2f4ea;
+            height: 2cm;
+            display: flex;
+            align-items: center;
+        }
+
+        header a {
+            color: #1F4D36;
+        }
+
+        header button {
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid #1F4D36;
+            border-radius: 30px;
+        }
+
+        .main-btn {
+            padding: 10px 20px;
+            width: 200px;
+            height: 50px;
+            background-color: transparent;
+            border: 3px solid #1F4D36;
+            border-radius: 30px;
+            background-color: #1F4D36;
+            cursor: pointer;
+        }
+
+        .btn2 {
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .img1 {
+            margin-top: 20px;
+        }
+
+        .w-50 h1 {
+            font-size: 100px;
+            font-weight: bold;
+            color: #1F4D36;
+        }
+
+        .w-50 p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .c2 {
+            background-color: #1F4D36;
+            width: 100%;
+            height: 1100px;
+            padding: none;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .main h2 {
+            font-size: 70px;
+            color: #F2F4EA;
+            margin-top: 150px;
+        }
+
+        .main p {
+            color: #F2F4EA;
+            font-size: 15px;
+        }
+
+        .img3 img {
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .img3 {
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+        }
+
+        .main3 {
+            height: 1900px;
+            display: flex;
+            text-align: center;
+        }
+
+        .container3 {
+            margin-top: 400px;
+            padding: 10px;
+        }
+
+        .h24 {
+            display: flex;
+            justify-content: center;
+            color: #1F4D36;
+            font-size: 50px;
+            margin-left: 230px;
+
+        }
+
+        .p24 {
+            display: flex;
+            justify-content: center;
+            color: #1F4D36;
+            width: 500px;
+            margin-left: 400px;
+        }
+
+        .img24 {
+            margin-top: 700px;
+            color: #1F4D36;
+            font-size: 50px;
+            display: flex;
+            padding: 50px;
+        }
+
+        .img24 h2 {
+            margin-right: 40px;
+            margin-bottom: 100px;
+        }
+
+        .p25 {
+            align-items: center;
+        }
+
+        .img24 img {
+            display: flex;
+            margin-bottom: 0px;
+            justify-content: center;
+        }
+
+        .flexbox4 {
+            background-color: #1F4D36;
+            height: 1000px;
+            margin-top: 400px;
+        }
+
+        .h26 {
+            color: #F2F4EA;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+        }
+
+        .p26 {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            color: #F2F4EA;
+        }
+
+        .img26 {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .h27 {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            color: #F2F4EA;
+        }
+
+        .p27 {
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+            color: #F2F4EA;
+            text-align: center;
+        }
+
+        .h28 {
+            display: flex;
+            justify-content: center;
+            color: #1F4D36;
+            font-size: 50px;
+            margin-left: 380px;
+        }
+
+        .btn29 button {
+            background-color: #1F4D36;
+            border-radius: 30px;
+            width: 150px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            color: #F2F4EA;
+            font-weight: 400;
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+
+        .flexbox8 {
+            background-color: #1F4D36;
+            height: 700px;
+        }
+
+        .h212 {
+            color: #F2F4EA;
+            display: flex;
+            margin-top: 00px;
+            font-size: 50px;
+            margin-left: 50px;
+            border-bottom: 2px solid #F2F4EA;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="flex-box">
+                <h1 style="text-transform: capitalize;"></h1>
+                <nav>
+                    <ul class="flex">
+                        <li>
+                            <a href="">Solutions</a>
+                        </li>
+                        <li>
+                            <a href="">Learn</a>
+                        </li>
+                        <li>
+                            <a href="">Our Mission</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="btn1">
+                    <a href="" class="btn1a">Join the Waitlist</a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flex-box">
+                <div class="w-50">
+                    <h1>Take <br>
+                        Care <br>
+                        of You</h1>
+                    <p>Meet the modern finance platform created for physicians, by physicians. <br>
+                        Your path to financial
+                        independence is here.</p>
+                    <button class="main-btn">
+                        <a href="" class="btn2">Join waitlist</a>
+                    </button>
+                </div>
+                <div class="img1">
+                    <img src="./main.png" alt="">
+                </div>
+            </div>
+    </main>
+    <div class="c2">
+        <main>
+            <div class="main">
+                <h2>The Financial Independence <br>
+                    Platform for Physicians</h2>
+            </div>
+            <div class="main">
+                <p>Doctors make so many sacrifices for the greater good, including their own financial <br>
+                    wellbeing. Attend
+                    is a comprehensive digital finance platform designed to change <br>
+                    that. Now you can take care of
+                    yourself as well as you take care of your patients.</p>
+            </div>
+            <div class="img3">
+                <img src="./IMAGE.png" alt="">
+            </div>
+        </main>
+    </div>
+    <div class="main3">
+        <main>
+            <div class="container3">
+                <div class="h24">
+                    <h2>Attending to Your <br>
+                        Financial Life</h2>
+                </div>
+                <div class="p24">
+                    <p>Physicians shouldn't have to choose between meaning and money — you
+                        deserve both. Attend gives
+                        you
+                        the power to easily manage your finances
+                        anytime, anywhere no sacrifice necessary.</p>
+                </div>
+                <div class="img24">
+                    <h2>A Financial Solutions <br>
+                        Platform that is...</h2>
+                    <img src="./IMAGE (1).png" alt="">
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container4">
+        <main>
+            <div class="flexbox4">
+                <h2 class="h26">The World Needs More <br>
+                    Physicians. Not Less.</h2>
+                <p class="p26">Attend aims to ease the financial stress that contributes to burnout. Wherever <br>
+                    you are in your
+                    career, a more successful financial future starts now.</p>
+                <div class="img26">
+                    <img src="./IMAGE (4).png" alt="">
+                    <img src="./IMAGE (3).png" alt="" style="margin-left: 40px;">
+                    <img src="./IMAGE (2).png" alt="" style="margin-left: 40px;">
+                </div>
+                <div class="h27">
+                    <h2>Attending Physicians</h2>
+                    <h2 style="margin-left: 70px;">Residents & Fellows</h2>
+                    <h2 style="margin-left: 70px;">Medical Students</h2>
+                </div>
+                <div class="p27">
+                    <p>You can do more than just <br>
+                        make up for lost time</p>
+                    <p style="margin-left: 90px;">The time to protect your <br>
+                        career is now</p>
+                    <p style="margin-left: 90px;">The earlier you tend to <br>
+                        your finances the better</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="main3">
+        <main>
+            <div class="container3">
+                <div class="h28">
+                    <h2>Knowledge is the <br>
+                        Best Medicine</h2>
+                </div>
+                <div class="p24">
+                    <p>Feel late to the game of financial education? You're not alone. Attend breaks it down, makes it
+                        <br>
+                        easy and gives you confidence that your financial future is in good hands — yours.
+                    </p>
+                </div>
+                <div class="btn29">
+                    <button>Learn more</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container8">
+        <div class="flexbox8">
+            <h2 class="h212"> <br>
+                <br>
+                <br>
+                Attend is the Modern Finance <br>
+                Platform Created for <br>
+                Physicians, by Physicians <br>
+                <br>
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>
